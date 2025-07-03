@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+    background-color: plum;
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 20px;
+}
+
+img {
+    border-radius: 10px;
+    width: 300px;
+    height: auto;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    flex: 1;
+}
+
+.product-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 21px;
+    width: 500px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.price-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2e5d3f;
+}
+
+.discount-price {
+    text-decoration: line-through;
+    color: #777;
+    font-size: 16px;
+}
+
+.add-to-cart {
+    padding: 12px;
+    font-size: 18px;
+    background-color: #3b8160;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.add-to-cart:hover {
+    background-color: #2a5d44;
+}
+.add-to-cart:active {
+    background-color: #1f4a36;
+}
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+    <img src="https://snehasikder.github.io/Product-Preview-Cart-Component/images/image-product-desktop.jpg" alt="Product Image">
+    
+    <div class="details">
+        <p class="product-name">Парфюмированная вода Gabrielle Essence</p>
+        <p class="description">Цветочная, солнечная и чувственная интерпретация, созданная Оливье Польжем, парфюмером-создателем Дома CHANEL.</p>
+        
+        <div class="price-row">
+            <span class="price">$149.99</span>
+            <span class="discount-price">$169.99</span>
+        </div>
+
+        <button class="add-to-cart">🛒 Добавить в корзину</button>
+    </div>
+</div>
+
+</body>
+</html>
